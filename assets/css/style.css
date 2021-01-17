@@ -1,0 +1,334 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* border: #06805e solid 1px; */
+}
+
+body,
+html {
+  margin: 0;
+  /* height: 100%; */
+  background: #fff;
+
+}
+
+.home {
+  margin: auto;
+  padding: 50px 0 0 0;
+  width: 90%;
+  background: #fff;
+}
+
+.home img{
+  width: 100%;
+  height: auto;
+}
+
+.sidenav {
+  width: 230px;
+  height: 570px;
+  position: fixed;
+  z-index: 1;
+  top: 130px;
+  left: 40px;
+  bottom: 50px;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 8px 0;
+  opacity: 0.94;
+  line-height: 0.75;
+  flex-direction: column;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 1px;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  
+}
+
+
+.sidenav a:hover {
+  color: #A9A9A9;
+}
+
+.sidenav p {
+  font-size: 12px;
+  padding: 26px 8px 6px 16px;
+  color: darkgray;
+}
+
+
+.brand{
+  position: absolute;
+  top: 10px;
+
+}
+.brand a{
+  display: block;
+  width: 100px;
+  font-size: 25px;
+  margin-left: 15px;
+  white-space:normal;
+  line-height: 1;
+  
+
+}
+.collapse{
+  margin-top: 125px;
+}
+
+.sidesocial {
+  /* color: darkgray; */
+  display: flex;
+  margin-top: 45px;
+}
+
+.sidesocial div {
+  width: 15px;
+}
+
+.spacebtwn {
+  height: 150px;
+}
+
+#scroll {
+  width: 5665px;
+  height: 513px;
+  margin: 133px 0 0 280px;
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: transparent;
+}
+
+#scroll ul {
+  /* float:left; */
+  margin-right: -999em;
+  white-space: nowrap;
+  list-style: none;
+}
+
+#scroll li {
+  margin: 1px;
+  text-align: center;
+  float: left;
+  display: inline;
+}
+
+#scroll img {
+  border: 0;
+  display: block;
+  margin: 0px auto;
+  width: auto;
+  height: 513px;
+  object-fit: cover;
+}
+
+#scroll span {
+  padding: 100px 0 0;
+  display: block;
+
+}
+
+.miniphoto img {
+  width: 150px;
+  height: 150px;
+}
+
+.blogcont {
+  position: relative;
+  left: 280px;
+  top: 130px;
+  width: 1000px;
+  height: 1200px;
+}
+
+.oneline {
+  margin: 20px 30px;
+  width: 980px;
+}
+
+.blogcont h3{
+  margin: 28px 0px 30px 45px;
+  font-size: 24px;
+}
+#bloghr{
+  margin-left: 45px;
+}
+.blogimages{
+  display: block;
+  padding-bottom: 30px;
+  width: 75%;
+}
+.blogimages img{
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+#blogcontin{
+  position: relative;
+  top: 123px;
+  left: 280px;
+  margin-top: 33px;
+  /* margin-left: 30px; */
+  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parablog{
+  width: 100%;
+}
+#blogcontin p{
+  font-size: 12px;
+}
+
+.col-10 h4 {
+  font-size: 18px;
+}
+.col-10 p{
+  font-size: 12px;
+}
+#blogdate {
+  color: darkgray;
+  font-size: 12px;
+}
+
+.blogpara {
+  font-size: 14px;
+}
+
+
+#theblogs{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contpara {
+  width: 950px;
+  text-align: center;
+  margin-top: 75px;
+}
+
+
+.contactpage {
+  position: relative;
+  left: 180px;
+  top: 130px;
+  width: 950px;
+  margin: 0 140px;
+}
+
+.profile img {
+  width: 95%;
+  height: auto;
+}
+
+#beforeform {
+  margin: 70px 0 70px 0;
+}
+
+.form-class {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  width: 75%;
+}
+#submit-button{
+  margin-top: 10px;
+}
+
+.bc {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 150px;
+  }
+
+  .sidenav a {
+    font-size: 180px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    
+  }
+  .spacebtwn{
+    height: 10px;
+  }
+  
+  /* #scroll{
+    margin: 333px 0 0 260px;
+  } */
+  .forresp{
+    margin: auto;
+    width: 80%;
+  }
+  
+  .sidenav a {
+    float: left;
+
+    /* margin-left: 10px; */
+  }
+  .sidenav h2{
+    /* text-align: center; */
+  }
+  div#scroll {
+    margin-left: 0;
+  }
+  .brand a{
+    font-size: 18px;
+    width: 400px;
+  }
+  .blogcont {
+    position: relative;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 1200px;
+  }
+  .miniphoto img{
+    left: 0;
+  }
+  .secgrid{
+    left: 90px;
+  }
+  #nameBlog{
+    text-align: center;
+  }
+
+  #blogcontin{
+    position: relative;
+  top: 123px;
+  left: 10px;
+  
+  }
+  .contactpage {
+    position: relative;
+    left: 0;
+    top: 80px;
+    margin: 0 40px;
+  }
+  .profile img{
+    width: 60%;
+    height: auto;
+  }
+
+}
+
