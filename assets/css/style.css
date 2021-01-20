@@ -161,13 +161,14 @@ html {
   margin-left: 45px;
 }
 .blogimages{
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 30px;
   width: 75%;
 }
 .blogimages img{
   margin-bottom: 20px;
-  width: 95%;
+  width: 90%;
 }
 
 #blogcontin{
@@ -201,7 +202,7 @@ html {
 
 .blogpara {
   font-size: 14px;
-}
+  }
 
 
 #theblogs{
@@ -211,7 +212,7 @@ html {
 }
 
 .contpara {
-  width: 950px;
+  /* width: 950px; */
   text-align: center;
   margin-top: 75px;
 }
@@ -219,15 +220,18 @@ html {
 
 .contactpage {
   position: relative;
-  left: 180px;
-  top: 130px;
-  width: 950px;
-  margin: 0 140px;
+  right: 0;
+  top: 80px;
+  
+  /* margin: 0 140px; */
 }
 
-.profile img {
-  width: 95%;
-  height: auto;
+.profile  img{
+  margin: 0 40px;
+  /* width: 100%; */
+  /* margin: 10px 70px; */
+  /* width: 95%;
+  height: auto; */
 }
 
 #beforeform {
@@ -236,10 +240,8 @@ html {
 
 .form-class {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 30px;
-  width: 75%;
+  
 }
 #submit-button{
   margin-top: 10px;
@@ -260,6 +262,7 @@ html {
   }
 } */
 
+
 @media screen and (max-width: 768px) {
   .sidenav {
     width: 100%;
@@ -269,6 +272,16 @@ html {
     left: 0;
     
   }
+  .collapse{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidenav a {
+    align-items: center;
+    
+  }
+  
   .spacebtwn{
     height: 10px;
   }
@@ -289,6 +302,10 @@ html {
   .sidenav h2{
     /* text-align: center; */
   }
+  .sidesocial{
+    margin-top: 245px;
+    margin-bottom: 200px;
+  }
   div#scroll {
     margin-left: 0;
   }
@@ -308,6 +325,7 @@ html {
   }
   .secgrid{
     left: 90px;
+    padding-right: 100px;
   }
   #nameBlog{
     text-align: center;
@@ -323,12 +341,25 @@ html {
     position: relative;
     left: 0;
     top: 80px;
-    margin: 0 40px;
+    margin: 0 10px;
   }
-  .profile img{
-    width: 60%;
-    height: auto;
+  .profile img {
+    width: 100%;
+    margin: 0;
+    /* width: 95%;
+    height: auto; */
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .miniphoto img{
+    width: 100px;
+    height: 100px;
+  }
+  .secgrid{
+    left: 60px;
+    padding-right: 100px;
   }
 
 }
-
