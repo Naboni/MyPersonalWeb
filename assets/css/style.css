@@ -164,11 +164,13 @@ html {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
-  width: 75%;
+  width: 85%;
+  margin: 0 15x;
 }
 .blogimages img{
   margin-bottom: 20px;
-  width: 90%;
+  width: 100%;
+  height: auto;
 }
 
 #blogcontin{
@@ -222,11 +224,14 @@ html {
   position: relative;
   right: 0;
   top: 80px;
+  margin: 10px 50px;
+  /* width: 1000px; */
   
   /* margin: 0 140px; */
 }
 
 .profile  img{
+  width: 100vh;
   margin: 0 40px;
   /* width: 100%; */
   /* margin: 10px 70px; */
@@ -252,16 +257,6 @@ html {
   margin-top: 20px;
 }
 
-/* @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 150px;
-  }
-
-  .sidenav a {
-    font-size: 180px;
-  }
-} */
-
 
 @media screen and (max-width: 768px) {
   .sidenav {
@@ -276,9 +271,10 @@ html {
     display: flex;
     justify-content: center;
   }
-
   .sidenav a {
     align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
     
   }
   
@@ -306,6 +302,10 @@ html {
     margin-top: 245px;
     margin-bottom: 200px;
   }
+  .sidesocial div{
+    margin: 0 5px;
+  }
+
   div#scroll {
     margin-left: 0;
   }
@@ -349,17 +349,36 @@ html {
     /* width: 95%;
     height: auto; */
   }
+  .sidenav{
+    opacity: 1;
+  }
+  .blogimages{
+    margin: auto;
+  }
   
 }
 
 @media screen and (max-width:480px) {
+  .sidenav{
+    opacity: 1;
+  }
+  .collapse{
+    display: flex;
+    justify-content: left;
+  }
+  .navbar-brand a{
+    text-size-adjust: auto;
+  }
   .miniphoto img{
     width: 100px;
     height: 100px;
   }
   .secgrid{
-    left: 60px;
-    padding-right: 100px;
+    left: 0;
+    padding-right: 30px;
+  }
+  .bc img{
+    display: none;
   }
 
 }
